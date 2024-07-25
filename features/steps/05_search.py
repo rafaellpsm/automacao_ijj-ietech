@@ -2,7 +2,6 @@ from behave import given,when,then
 from selenium.webdriver.common.by import By
 import requests
 import time
-import os
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 
@@ -16,6 +15,7 @@ def page_product(context):
 def search_product_fill(context):
     name_product_search = context.browser.find_element(By.CLASS_NAME, "search")
     name_product_search.send_keys("Camiseta do Chico")
+    context.actions.send_keys(Keys.PAGE_DOWN).perform()
     time.sleep(3)
     
 @then(u'The product is shown')

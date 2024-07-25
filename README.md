@@ -1,3 +1,9 @@
+
+
+
+
+
+
 # What does the code do? 
 The Code is made for the website made available by the Joga Junto institute
 - [Website Link](https://projetofinal.jogajuntoinstituto.org)

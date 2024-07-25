@@ -2,7 +2,6 @@ from selenium.webdriver import Firefox
 import time
 from faker import Faker
 from selenium.webdriver.common.action_chains import ActionChains
-import os
 
 fake = Faker('pt_BR')
 def generate_fake_email():
