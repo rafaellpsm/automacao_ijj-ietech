@@ -41,7 +41,7 @@ The Automation Code enters the website, registers a fake account, using **Faker*
 
 ###
 
-# O'que o código faz?
+# O que o código faz?
 O Código é feito para o site disponibilizado pelo instituto Joga Junto
 - [Link do Site](https://projetofinal.jogajuntoinstituto.org)
 
