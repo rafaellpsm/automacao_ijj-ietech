@@ -12,8 +12,9 @@ def page_login(context):
     
 @when(u'I fill in the fields with the correct credentials')
 def fill_login_form(context):
-    time.sleep(3)
+    time.sleep(1)
     context.browser.find_element(By.NAME, "email").send_keys(context.fake_email)
+    time.sleep(1)
     context.browser.find_element(By.NAME, "password").send_keys(context.fake_password)
     time.sleep(2)
 
@@ -21,6 +22,7 @@ def fill_login_form(context):
 def submit_login(context):
     btn_login = context.browser.find_element(By.XPATH, "/html/body/div/main/form/button")
     btn_login.submit()
+    time.sleep(2)
 
 @then(u'I successfully logged into the account')
 def login_sucess(context):
